@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: roboto;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .world {
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid #000; 
+    background-color: azure;/* Optional: add a border to see the box clearly */
+  }
+  
+  .score {
+    margin-bottom: 12px;
+    position: absolute;
+    top: 1vmin;
+    right: 8vmin;
+    font-size: 5vmin;
+    font-weight: bold;
+  }
+  
+  .ground {
+    --left: 0;
+    position: absolute;
+    width: 300%; 
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+  }
+  
+  .dino {
+    --bottom: 0;
+    position: absolute;
+    left: 3%;
+    height: 20%;
+    bottom: calc(var(--bottom) * 1%);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: bold;
+    top: 1vmin;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .cactus {
+    height: 20%;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+    position: absolute;
+  }
+  
